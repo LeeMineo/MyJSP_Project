@@ -7,6 +7,8 @@ public class BoardVO {
 	private String title;
 	private String writer;
 	private String content;
+	private String category;
+	private int read_yn;
 	private Date regdate;
 	private int cnt;
 	
@@ -45,5 +47,21 @@ public class BoardVO {
 	}
 	public void setCnt(int cnt) {
 		this.cnt = cnt;
+	}
+
+	public String getCategory() {
+		return category;
+	}
+
+	public void setCategory(String category) {
+		this.category = category;
+	}
+
+	public int getRead_yn() {
+		return read_yn;
+	}
+
+	public void setRead_yn(int read_yn) {
+		this.read_yn = read_yn;
 	}
 }
