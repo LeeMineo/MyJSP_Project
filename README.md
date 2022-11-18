@@ -36,3 +36,22 @@
 - 수정
 - 삭제 
 
+
+----
+# 파일 업로드 CRUD with File upload
+1.FileUpload class 설계 및 제작
+- com.example.img 패키지 내
+- public BoardVO uploadPhoto (HttpServletRequest request)
+- public static void deleteFile (HttpServletRequest request, String filename)
+
+2. BoardDAO class 변경
+- method 추가 : public String getPhotoFilename (int sid)
+
+3. 관련 JSP 소스 변경 및 스타일 일관성 적용
+- addpostform.jsp (addform.jsp): photo 내용을 파일을 선택하여 첨부하도록 변경
+- addpost.jsp (add_ok.jsp): 전송된 파일을 저장하는 기능추가
+- post.jsp (view.jsp): photo로 저장되어 있는 파일을 화면에 표시하도록 변경
+- editform.jsp (editform.jsp) : photo파일을 보여주고, 변경할 파일을 선택하여 첨부하도록 변경
+- editpost.jsp (edit_ok.jsp): 전송된 파일을 새롭게 저장하는 기능추가
+- deletepost.jsp (delete_ok.jsp): 기존에 저장된 파일을 삭제하는 기능 추가
+
